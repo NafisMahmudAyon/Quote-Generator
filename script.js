@@ -22,9 +22,12 @@ async function getQuote(){
         console.log(data);
     } catch (error) {
         console.log(error);
-        quoteEl.innerText = 'An error happend, try again later';
+        quoteEl.innerText = 'An error happend, try again later.';
+
         authorEl.innerText = 'An error happend';
+
         btnEl.innerText = "Loading...";
+
         btnEl.desabled = false;
     }
     
